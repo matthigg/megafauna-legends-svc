@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table
@@ -27,7 +28,7 @@ public class Student {
   private String name;
   private String email;
   private LocalDate dob;
-  // @Transient
+  @Transient
   private Integer age;
 
   public Student () {}
