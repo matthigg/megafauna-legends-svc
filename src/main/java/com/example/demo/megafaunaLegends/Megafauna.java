@@ -4,15 +4,15 @@ public class Megafauna {
   
   private Long id;
   private String pizzaId;
-  private String hp;
-  private String maxHp;
+  private Integer hp;
+  private Integer maxHp;
   private Integer level;
 
   public Megafauna (
     Long id,
     String pizzaId,
-    String hp,
-    String maxHp,
+    Integer hp,
+    Integer maxHp,
     Integer level
   ) {
     this.id = id;
@@ -38,19 +38,19 @@ public class Megafauna {
     this.pizzaId = pizzaId;
   }
 
-  public String getHp() {
+  public Integer getHp() {
     return hp;
   }
 
-  public void setHp(String hp) {
+  public void setHp(Integer hp) {
     this.hp = hp;
   }
 
-  public String getmaxHp() {
+  public Integer getmaxHp() {
     return maxHp;
   }
 
-  public void setMaxHp(String maxHp) {
+  public void setMaxHp(Integer maxHp) {
     this.maxHp = maxHp;
   }
 
