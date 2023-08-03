@@ -1,7 +1,26 @@
 package com.example.demo.megafaunaLegends;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
 public class Megafauna {
   
+  @Id
+  @SequenceGenerator(
+    name = "megafauna_sequence",
+    sequenceName = "megafauna_sequence",
+    allocationSize = 1
+  )
+  @GeneratedValue(
+    strategy = GenerationType.SEQUENCE,
+    generator = "megafauna_sequence"
+  )
   private Long id;
   private String pizzaId;
   private Integer hp;
