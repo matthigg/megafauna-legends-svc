@@ -13,7 +13,7 @@ public class MegafaunaConfig {
   CommandLineRunner commandLineRunner(MegafaunaRepository repository) {
     return args -> {
       Megafauna bethPizzaA = new Megafauna(
-        1L,
+        // 1L,
         "v001",
         40,
         50,
@@ -21,7 +21,7 @@ public class MegafaunaConfig {
 			);
 
       Megafauna bethPizzaB = new Megafauna(
-        2L,
+        // 2L,
         "f001",
         30,
         50,

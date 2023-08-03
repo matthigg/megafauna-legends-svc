@@ -27,6 +27,8 @@ public class Megafauna {
   private Integer maxHp;
   private Integer level;
 
+  public Megafauna () {}
+
   public Megafauna (
     Long id,
     String pizzaId,
@@ -35,6 +37,18 @@ public class Megafauna {
     Integer level
   ) {
     this.id = id;
+    this.pizzaId = pizzaId;
+    this.hp = hp;
+    this.maxHp = maxHp;
+    this.level = level;
+  }
+
+  public Megafauna (
+    String pizzaId,
+    Integer hp,
+    Integer maxHp,
+    Integer level
+  ) {
     this.pizzaId = pizzaId;
     this.hp = hp;
     this.maxHp = maxHp;
