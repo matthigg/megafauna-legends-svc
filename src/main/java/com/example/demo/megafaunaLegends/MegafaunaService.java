@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class MegafaunaService {
 
-    private final MegafaunaRepository megafaunaRepository;
+  private final MegafaunaRepository megafaunaRepository;
 
   @Autowired
   public MegafaunaService(MegafaunaRepository megafaunaRepository) {
     this.megafaunaRepository = megafaunaRepository;
   }
   
-  public List<Megafauna> getmegafaunas() {
+  public List<Megafauna> getMegafauna() {
     return megafaunaRepository.findAll();
 	}
   

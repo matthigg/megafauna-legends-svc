@@ -11,15 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "megafauna")
 public class MegafaunaController {
   
+  // private final MegafaunaService megafaunaService;
   private final MegafaunaService megafaunaService;
 
   @Autowired
-  public megafaunaController(MegafaunaService megafaunaService) {
+  public MegafaunaController(MegafaunaService megafaunaService) {
     this.megafaunaService = megafaunaService;
   }
 
   @GetMapping
   public List<Megafauna> getMegafauna() {
-    return MegafaunaService.getMegafauna();
+    return megafaunaService.getMegafauna();
 	}
 }
