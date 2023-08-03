@@ -1,4 +1,4 @@
-package com.example.demo.student;
+package com.example.demo.megafaunaLegends;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ public class WebConfig {
     return new WebMvcConfigurer() {
       @Override
       public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**");
+        registry.addMapping("/megafauna/**");
       }
     };
   }
